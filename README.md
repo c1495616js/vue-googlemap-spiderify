@@ -20,7 +20,7 @@ Therefore, we make this change by math.  [Logarithmic spiral](https://en.wikiped
 
 ## Key function
 
-```javascript=
+```javascript
  // key function
     function tranform (lng, lat, j, cnt) { // helper
       const l = 10e-5
@@ -44,7 +44,7 @@ Therefore, we make this change by math.  [Logarithmic spiral](https://en.wikiped
 
 #### Use your own google map api key
 
-```javascript=
+```javascript
 Vue.use(VueGoogleMaps, {
   load: {
      key: 'USE_YOUR_GOOGLE_API_KEY',     
@@ -54,7 +54,7 @@ Vue.use(VueGoogleMaps, {
 
 #### Add markers here
 
-```javascript=
+```javascript
 generateMarkers(){
     const n1 = 20;
     [...Array(n1).keys()].forEach(j => {
