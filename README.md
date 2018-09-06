@@ -39,3 +39,32 @@ Therefore, we make this change by math.  [Logarithmic spiral](https://en.wikiped
     }
   },
 ```
+
+### Setup
+
+#### Use your own google map api key
+
+```javascript=
+Vue.use(VueGoogleMaps, {
+  load: {
+     key: 'USE_YOUR_GOOGLE_API_KEY',     
+  }
+});
+```
+
+#### Add markers here
+
+```javascript=
+generateMarkers(){
+    const n1 = 20;
+    [...Array(n1).keys()].forEach(j => {
+      this.markers.push(marker1)
+    })
+
+    const n2 = 10;
+    [...Array(n2).keys()].forEach(j => {
+      this.markers.push(marker2)
+    })
+  }
+},
+```
